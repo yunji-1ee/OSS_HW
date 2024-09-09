@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Page</title>
 
     <!-- 내부 스타일 시트 적용 -->
     <style>
@@ -20,43 +19,45 @@
         }
 
         header h1 {
-            font-size: 3.5rem;
+            font-size: 60px;
             margin: 0px;
         }
 
         header p {
-            font-size: 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
             margin: 0; 
         }
 
         /* 콘텐츠와 사이드바, 스타일시트를 감싸는 래퍼 */
         .wrapper {
-            display: flex;
+            display: flex-col;
             justify-content: space-between;
-            max-width: 1300px; /* 전체 래퍼의 너비를 증가 */
-            margin: 0 auto;
+            width: 100%; /* 전체 래퍼의 너비를 증가 */
             padding: 0;
         }
 
-        main {
+        .main {
             display: flex;
-            flex-direction: column;
             flex: 2;
-         
         }
 
         .content {
+            padding-left: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
             background-color: white;
             width: 100%;
-            padding-left: 10px;
-            height: 100%; /* 높이를 고정하여 스타일시트와 동일하게 유지 */
-        }
+       
+            }
 
         .no-style-section, .sidebar {
             background-color: white;
             padding: 20px;
+            height: 20%;
+            margin-left: 10px;
+            margin-right : 10px;
 
-            width: 100%; 
         }
 
         /* 연핑크 배경 사이드바 */
@@ -64,7 +65,7 @@
             background-color: #F6DAD7;
             color: #d14836;
             font-size: 1.2rem;
-            width: 100%; /* 사이드바 너비를 넓게 조정 */
+
         }
 
         .sidebar h2 {
@@ -75,12 +76,13 @@
         /* 스타일시트 선택 버튼 영역 */
         .stylesheets {
             background-color: white;
-            width: 200px; /* 스타일시트 선택 버튼의 영역을 넓게 */
+            margin-top: 10px;
+            margin-right : 10px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding: 10px;
-    
+            padding-top: 20px;
+        
         }
 
         .stylesheets ul {
@@ -91,6 +93,8 @@
 
         .stylesheets li {
             margin-bottom: 10px;
+            
+    
         }
 
         .stylesheets li a {
@@ -103,6 +107,7 @@
             text-decoration: none;
             width: 150px;
             margin: 0 auto;
+            height: 15px;
         }
 
         .stylesheets li a.active {
@@ -139,13 +144,13 @@
 <body>
 
     <header>
-        <h1>Welcome to 22100549's Homepage</h1>
+        <h1>Welcome to 22100549's Homepage</h1><br>
         <p>Use the menu to select different Stylesheets</p>
     </header>
 
     <!-- 콘텐츠와 사이드바, 스타일시트 래퍼 -->
     <div class="wrapper">
-        <main>
+        <div class="main">
             <!-- 콘텐츠 영역 -->
             <section class="content">
                 <h1>Same Page Different Stylesheets</h1>
@@ -157,23 +162,7 @@
                 </p>
             </section>
 
-            <!-- No Styles 섹션 -->
-            <section class="no-style-section">
-                <h2>No Styles</h2>
-                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
-                    <br/>
-                    <a href="index.htm" class="hyper">No stylesheet</a>.
-                </p>
-            </section>
-
-            <!-- 사이드바 -->
-            <section class="sidebar">
-                <h2>Side-Bar</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-            </section>
-        </main>
-
-        <!-- 스타일시트 선택 버튼 -->
+             <!-- 스타일시트 선택 버튼 -->
         <section class="stylesheets">
             <ul>
                 <li><a href="style1.htm">Stylesheet 1</a></li>
@@ -181,7 +170,24 @@
                 <li><a href="index.htm">No stylesheet</a></li>
             </ul>
         </section>
-    </div>
+        </div>
+
+<!-- No Styles 섹션 -->
+<section class="no-style-section">
+    <h2>No Styles</h2>
+    <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+        <br/>
+        <a href="index.htm" class="hyper">No stylesheet</a>.
+    </p>
+</section>
+
+    <!-- 사이드바 -->
+    <section class="sidebar">
+        <h2>Side-Bar</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </section>
+        
+</div>
 
     <footer>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.    </footer>
