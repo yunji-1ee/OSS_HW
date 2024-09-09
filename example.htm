@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom Navbar Example</title>
+    <style>
+        /* 파란 네모 박스 스타일 */
+        .blue-box {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .blue-box:hover {
+            background-color: #0056b3;
+        }
+
+        /* 연한 하늘색 배경 스타일 */
+        .light-blue-background {
+            background-color: #f0f8ff; /* 연한 하늘색 */
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* 전체 페이지 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .lead {
+            margin-bottom: 20px;
+        }
+
+        /* 하단 네비게이션 바 스타일 */
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar .nav {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .nav-item {
+            margin: 0 15px;
+        }
+
+        .navbar .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar .nav-link.disabled {
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 메인 컨텐츠, 연한 하늘색 배경 포함 -->
+    <div class="container light-blue-background">
+        <h1>Bottom Navbar example</h1>
+        <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
+        <!-- 파란색 네모 박스 버튼 -->
+        <a href="https://getbootstrap.com/docs/5.3/components/navbar/" class="blue-box" target="_blank">View navbar docs »</a>
+    </div>
+
+    <!-- 하단 네비게이션 바 -->
+    <nav class="navbar">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dropup</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>
