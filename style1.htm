@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Page - Stylesheet 1</title>
 
     <!-- Stylesheet 1 적용 -->
     <style>
@@ -14,7 +13,7 @@
         }
 
         .container {
-            xmin-width: 900px;
+            min-width: 900px;
         }
 
         .wrapper {
@@ -25,8 +24,11 @@
         #top, #sidebar, #bottom, .menuitem {
             border-radius: 4px;
             margin: 4px;
+            
         }
 
+
+        
         #top {
             background-color: #04AA6D;
             color: #ffffff;
@@ -65,27 +67,32 @@
         }
 
         #top h1, #top p, #menulist {
+            text-decoration: none;
             margin: 0;
             padding: 0;
         }
 
         .menuitem {
+            text-decoration: none;
             background-color: #f1f1f1;
             border: 1px solid #d4d4d4;
             list-style-type: none;
             padding: 2px;
         }
 
+
         .menuitem:first-child {
             background-color: #04AA6D;
-            color: white;
+            color: #ffffff;
             font-weight: bold;
+        
         }
 
         a {
             color: #000000;
-            text-decoration: underline;
+            text-decoration: none;
         }
+
     </style>
 
 </head>
@@ -99,7 +106,7 @@
   <div class="wrapper">
    <div id="menubar">
      <ul id="menulist">
-       <li class="menuitem"><a href="style1.htm">Stylesheet 1</a></li>
+       <li class="menuitem"><a1 href="style1.htm">Stylesheet 1</a1></li>
        <li class="menuitem"><a href="style2.htm">Stylesheet 2</a></li>
        <li class="menuitem"><a href="index.htm">No Stylesheet</a></li>
      </ul>
